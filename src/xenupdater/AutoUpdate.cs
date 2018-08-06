@@ -39,7 +39,7 @@ using System.Net;
 using System.Runtime.InteropServices;
 using Microsoft.Win32;
 using System.Collections.Generic;
-using TaskScheduler;
+//using TaskScheduler;
 using BrandSupport;
 
 namespace XenUpdater

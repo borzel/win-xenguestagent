@@ -40,13 +40,13 @@ using System.Configuration.Install;
 using System.Reflection;
 using XenGuestLib;
 
-[assembly:AssemblyVersion(XenVersions.Version)]
-[assembly:AssemblyFileVersion(XenVersions.Version)]
-[assembly:AssemblyCompanyAttribute(XenVersions.BRANDING_manufacturerLong)]
-[assembly:AssemblyProductAttribute(XenVersions.BRANDING_toolsForVMs)]
-[assembly:AssemblyDescriptionAttribute(XenVersions.BRANDING_guestAgentLong)]
-[assembly:AssemblyTitleAttribute(XenVersions.BRANDING_guestAgentLong)]
-[assembly:AssemblyCopyrightAttribute(XenVersions.BRANDING_copyrightGuestAgent)]
+[assembly:AssemblyVersion(BrandSupport.XenVersions.Version)]
+[assembly:AssemblyFileVersion(BrandSupport.XenVersions.Version)]
+[assembly:AssemblyCompanyAttribute(BrandSupport.XenVersions.BRANDING_manufacturerLong)]
+[assembly:AssemblyProductAttribute(BrandSupport.XenVersions.BRANDING_toolsForVMs)]
+[assembly:AssemblyDescriptionAttribute(BrandSupport.XenVersions.BRANDING_guestAgentLong)]
+[assembly:AssemblyTitleAttribute(BrandSupport.XenVersions.BRANDING_guestAgentLong)]
+[assembly:AssemblyCopyrightAttribute(BrandSupport.XenVersions.BRANDING_copyrightGuestAgent)]
 
 
 namespace xenwinsvc
