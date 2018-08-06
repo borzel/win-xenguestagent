@@ -14,23 +14,21 @@ namespace BrandSupport
 
         public BrandingControl(string path)
         {
-            Assembly sat = Assembly.LoadFile(path);
-            resources = new ResourceManager("textstrings", sat);
-            Trace.WriteLine("Resource manager created");
         }
 
         public string getString(string key)
         {
             try
             {
-                string res = this.resources.GetString(key);
-                Trace.WriteLine(key + ":" + res);
-                return res;
+                XenVersions xv = new XenVersions();
+                Type brandinstrings = new XenVersions().GetType();
+                FieldInfo bla = brandinstrings.GetField(key);
+                string value = (string)bla.GetValue(xv);
+
+                return value;
             }
             catch (Exception e)
             {
-                Trace.WriteLine("Unknown Branding : " + key);
-                Trace.WriteLine(e.ToString());
                 return "Unknown Branding " + key;
             }
         }
