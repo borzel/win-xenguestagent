@@ -150,7 +150,7 @@ namespace XenUpdater
             {
                 string mfg = Branding.GetString("BRANDING_manufacturer");
                 if (String.IsNullOrEmpty(mfg))
-                    mfg = "Citrix";
+                    mfg = "XCPng";
 
                 string app = Branding.GetString("BRANDING_updater");
                 if (String.IsNullOrEmpty(app))
